@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NUVA - Productos</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-animado">
+    <a href="index.html">
+        <img src="images/logotiponuva.png" alt="Logo NUVA" class="logo-nuva">
+    </a>
+</div>
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li id="carrito-container">
+                    <a href="carrito.html" class="cart-icon">🛒</a>
+                    <span id="contador-carrito">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="productos-container">
+        <h2>Nuestros Smartphones de Última Generación</h2>
+
+        <div class="productos-grid" id="lista-productos">
+
+            <div class="producto">
+                <img src="images/telefononova2.jpg" alt="Nuva X9 Pro" />
+                <h3>Nuva X9 Pro</h3>
+                <p>Pantalla AMOLED, 256GB, 12GB RAM.</p>
+                <div class="precio">$299.99</div>
+                <button class="btn-agregar" 
+                    data-id="1" 
+                    data-nombre="Nuva X9 Pro" 
+                    data-precio="299.99"
+                    data-imagen="images/producto1.jpg">
+                    Añadir al Carrito
+                </button>
+            </div>
+
+            <div class="producto">
+                <img src="images/telefononova1.jpg" alt="Nova Lite S" />
+                <h3>Nuva Lite S</h3>
+                <p>Ideal para el día a día. Batería de larga duración.</p>
+                <div class="precio">$100.99</div>
+                <button class="btn-agregar" 
+                    data-id="2" 
+                    data-nombre="Nuva Lite S" 
+                    data-precio="100.99"
+                    data-imagen="images/producto2.jpg">
+                    Añadir al Carrito
+                </button>
+            </div>
+
+            <div class="producto">
+                <img src="images/telefonoplegable.jpeg" alt="Nuva Z Plegable" />
+                <h3>Nuva Z Plegable</h3>
+                <p>El futuro es flexible. Innovación y estilo.</p>
+                <div class="precio">$750.50</div>
+                <button class="btn-agregar" 
+                    data-id="3" 
+                    data-nombre="Nova Z Plegable" 
+                    data-precio="750.50"
+                    data-imagen="images/producto3.jpg">
+                    Añadir al Carrito
+                </button>
+            </div>
+            
+            </div>
+    </section>
+
+    <footer>
+        <p>© 2025 NUVA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NUVA - Carrito</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-animado">
+    <a href="index.html">
+        <img src="images/logotiponuva.png" alt="Logo NUVA" class="logo-nuva">
+    </a>
+</div>
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li id="carrito-container"  class="active">
+                    <a href="carrito.html" class="cart-icon">🛒</a>
+                    <span id="contador-carrito">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carrito">
+        <h2>Tu Carrito</h2>
+
+        <table id="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio Unitario</th>
+                    <th>Cantidad</th>
+                    <th>Total Producto</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="carrito-total">
+            <p>Total a Pagar: <span id="total-carrito">$0.00</span></p>
+            <button id="btn-confirmar">Confirmar Compra</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 NUVA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
